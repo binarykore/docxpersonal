@@ -1,6 +1,6 @@
 {
 	"title":"My First Blog..",
-	"post":"My First Blog....\r\n\t* List 1\r\n\t* List 2\r\n\t* List 3",
+	"post":"Hello World, This is my first Time Blogging here....\r\n\t* List 1\r\n\t* List 2\r\n\t* List 3",
 	"api":{
 		"key":"default",
 		"thumbnail":"test"
