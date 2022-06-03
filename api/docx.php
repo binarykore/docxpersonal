@@ -11,7 +11,7 @@ if(!empty($_GET["filename"]) && !empty($_GET["year"])){
 		echo("<code>Coming Soon...</code>");
 	}
 }elseif(empty($_GET["filename"]) || empty($_GET["year"])){
-	$_dir = scandir($_SERVER["DOCUMENT_ROOT"]."/docx/");
+	$_dir = scandir($_SERVER["DOCUMENT_ROOT"]."/api/docx/");
 	$_year = [];
 	echo("<title>Blog Docx Tab</title>");
 	echo("<code>Coming Soon...</code>");
