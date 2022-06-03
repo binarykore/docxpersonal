@@ -30,7 +30,8 @@ if(!empty($_GET["filename"]) && !empty($_GET["year"])){
 			if($_coin == "." || $_coin == ".."){
 				continue;
 			}else{
-				$_blog[] = ("//".$_SERVER["HTTP_HOST"]."/blog/".($_coin)."/".($_year[$_g]));
+				$_filename = explode(".",$_coin)[0];
+				$_blog[] = ("//".$_SERVER["HTTP_HOST"]."/blog/".($_filename)."/".($_year[$_g]));
 			}
 		}
 	}	
