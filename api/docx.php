@@ -15,8 +15,7 @@ if(!empty($_GET["filename"]) && !empty($_GET["year"])){
 	$_year = [];
 	$_yearDir = [];
 	$_blog = [];
-	echo("<title>Blog Docx Tab</title>");
-	echo("<code>Coming Soon...</code>");
+	Header("Content-Type:Application/JSON");
 	foreach($_dir as $_token => $_coin){
 		if($_coin == "." || $_coin == ".."){
 			continue;
@@ -35,6 +34,6 @@ if(!empty($_GET["filename"]) && !empty($_GET["year"])){
 			}
 		}
 	}	
-	print_r($_blog);
+	echo(json_encode($_blog,JSON_PRETTY_PRINT));
 }//
 ?>
