@@ -1,0 +1,25 @@
+{
+	"functions": {
+		"api/*.php": {
+			"runtime": "snowkelus-php@0.0.5"
+		}
+	},
+	"routes": [
+		{
+			"src": "/",
+			"dest": "/api/docx.php"
+		},
+		{
+			"src": "/blog/(?<filename>[^/]*)/(?<year>[^/]*)",
+			"dest": "/api/docx.php?filename=$filename&year=$year"
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/(.*)",
+			"status": 404,
+			"dest": "/errors/404.html"
+		}
+	]
+}
